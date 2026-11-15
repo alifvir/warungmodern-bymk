@@ -18,8 +18,8 @@ python tools/audit.py
 
 ## Repo
 
-1. Buat repo publik atau privat `alifvir/umkm-warung-modern` (satu klien satu repo).
-2. Push seluruh isi proyek, termasuk `assets-src/` dan `data/`. Jangan push `dist/`, karena sudah ada di `.gitignore` dan dibangun ulang oleh Cloudflare.
+1. Repo sudah ada: `https://github.com/alifvir/warungmodern-bymk` (publik, satu klien satu repo).
+2. Push seluruh isi proyek, termasuk `assets-src/` dan `data/`. Jangan push `dist/`, karena sudah ada di `.gitignore` dan dibangun ulang oleh Cloudflare. `mockup/`, `kirim/`, `baru/`, dan media mentah WhatsApp juga diabaikan.
 
 ## Cloudflare Pages
 
@@ -29,7 +29,7 @@ python tools/audit.py
    - Build command: `pip install -r requirements.txt && python build.py`
    - Build output directory: `dist`
    - Root directory: kosong
-3. Deploy. Nama proyek menentukan subdomain, jadi putuskan sebelum klik pertama. Usulan: `umkm-warung-modern` sehingga alamatnya `https://umkm-warung-modern.pages.dev`.
+3. Deploy. Nama proyek menentukan subdomain, jadi putuskan sebelum klik pertama. Usulan: `warungmodern-bymk` sehingga alamatnya `https://warungmodern-bymk.pages.dev`.
 
 ## Setelah live
 
