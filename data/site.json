@@ -1,0 +1,64 @@
+{
+  "brand": "Warung Modern",
+  "brand_akhir": "by MK",
+  "judul": "Warung Modern by MK, lima rak dalam satu nomor WhatsApp",
+  "deskripsi": "Sembako harian, HP dan aksesoris bergaransi, kosmetik, roti, dessert dan minuman dalam satu tempat di Tangerang. Pesan lewat WhatsApp, bisa COD, transfer, debit, atau cicilan.",
+  "wa": "6281251268000",
+  "wa_tampil": "0812-5126-8000",
+  "wa_pesan": "Halo Warung Modern by MK, saya mau pesan.",
+  "kota": "Tangerang",
+  "alamat": "Menyusul",
+  "jam": "Menyusul",
+  "url": "",
+  "bayar": [
+    "Cash",
+    "Transfer bank",
+    "Kartu debit",
+    "Kartu kredit",
+    "SPayLater",
+    "Kredivo",
+    "Indodana",
+    "Akulaku",
+    "Home Credit",
+    "Adira"
+  ],
+  "cicilan": "0% sampai 12 bulan di BCA, BRI, Mandiri, dan BNI untuk produk Hapeworld.",
+  "kirim": "Kirim seluruh Indonesia lewat ekspedisi. Untuk area sekitar Tangerang bisa diantar atau ambil di toko.",
+  "toko": [
+    {
+      "nama": "Hapeworld",
+      "bidang": "HP dan aksesoris",
+      "catatan": "114rb follower di Instagram",
+      "tautan": "https://www.instagram.com/hapeworld/",
+      "label": "@hapeworld"
+    },
+    {
+      "nama": "Noona Cosmetic Centre",
+      "bidang": "Kosmetik",
+      "catatan": "Jakarta, menerima dropship dan reseller",
+      "tautan": "https://www.instagram.com/noonacosmetic/",
+      "label": "@noonacosmetic"
+    },
+    {
+      "nama": "Fuwari Bakes",
+      "bidang": "Bolu, cookies, kelas baking",
+      "catatan": "Gading Serpong",
+      "tautan": "https://www.instagram.com/fuwari.id/",
+      "label": "@fuwari.id"
+    },
+    {
+      "nama": "Pisang Nagih",
+      "bidang": "Pisang goreng dengan topping",
+      "catatan": "Produk dessert",
+      "tautan": "https://www.instagram.com/pisangnagihbanget/",
+      "label": "@pisangnagihbanget"
+    },
+    {
+      "nama": "Telur Super Segar",
+      "bidang": "Telur dan sembako harian",
+      "catatan": "Harga mengikuti pasar",
+      "tautan": "https://www.tiktok.com/@telursupersegar",
+      "label": "TikTok @telursupersegar"
+    }
+  ]
+}

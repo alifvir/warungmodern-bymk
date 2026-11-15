@@ -1,0 +1,11 @@
+dist/
+__pycache__/
+*.pyc
+.venv/
+
+# media mentah dari WhatsApp dan artefak kerja lokal, tidak ikut repo
+WhatsApp Image *.jpeg
+WhatsApp Video *.mp4
+baru/
+kirim/
+mockup/
