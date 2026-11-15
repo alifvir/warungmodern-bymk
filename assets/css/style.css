@@ -202,16 +202,6 @@ section{padding:52px 0}
 .kartu .pesan:hover{background:var(--pink-ink);border-color:var(--pink-ink);color:#fff}
 .catatan{font-size:.8rem;color:var(--muted);margin-top:16px;max-width:72ch}
 
-/* ---------- papan harga ---------- */
-.papan{background:var(--card);border:2px solid var(--ink);border-radius:var(--r-lg);box-shadow:var(--shadow-sticker);padding:20px 20px 16px}
-.papan h3{font-size:1.05rem;margin-bottom:2px}
-.papan .papan-note{font-size:.8rem;color:var(--muted);margin-bottom:14px}
-.papan ul{list-style:none;display:grid;gap:9px}
-.papan li{display:flex;align-items:baseline;gap:8px;font-size:.9rem}
-.papan .titik{flex:1;border-bottom:1px dotted #D9C2AC;transform:translateY(-4px)}
-.papan .nilai{font-family:var(--font-display);font-weight:600;font-size:.92rem;color:var(--accent-ink);white-space:nowrap}
-.papan .nilai.tanya{color:var(--muted);font-family:var(--font-body);font-size:.8rem;font-weight:700}
-
 /* ---------- cara order (nota) ---------- */
 .nota{
   background:var(--card);border:2px dashed var(--ink);border-radius:var(--r-lg);

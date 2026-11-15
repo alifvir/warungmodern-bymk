@@ -375,23 +375,6 @@ def halaman_beranda(ukuran):
         kartu_produk(next(p for p in PRODUK if p["id"] == pid), ukuran) for pid in pilihan
     )
 
-    papan = [
-        ("Osmanthus QQ Bowl", rupiah(35000), False),
-        ("Tang Yuan black sesame, isi 5 pcs", rupiah(25000), False),
-        ("Pisang goreng nagih per box", rupiah(27000), False),
-        ("Minuman, semua varian per cup", rupiah(25000), False),
-        ("Roti Fuwari", "%s sampai %s" % (rupiah(16000), rupiah(21000)), False),
-        ("Beef floss", rupiah(16000), False),
-        ("Samsung Galaxy A07 4/64", rupiah(2099000), False),
-        ("Telur ayam, gula, minyak", "harga pasar", True),
-    ]
-    baris_papan = "\n".join(
-        """      <li><span>%s</span><span class="titik" aria-hidden="true"></span>
-        <span class="nilai%s">%s</span></li>"""
-        % (escape(nama), " tanya" if tanya else "", escape(nilai))
-        for nama, nilai, tanya in papan
-    )
-
     bayar = "".join("<span>%s</span>" % escape(b) for b in SITE["bayar"])
 
     toko = "\n".join(
@@ -470,25 +453,6 @@ def halaman_beranda(ukuran):
   </div>
 </section>
 
-<section id="papan" style="padding-top:8px">
-  <div class="wrap">
-    <div class="info-dua">
-      <div class="papan">
-        <h3>Papan harga</h3>
-        <p class="papan-note">Harga dessert, roti, dan minuman diperbarui dari poster terbaru. Sembako ikut pasar.</p>
-        <ul>
-{baris_papan}
-        </ul>
-      </div>
-      <div>
-        <h3>Kenapa harganya begitu</h3>
-        <p>Dessert dan minuman dibuat sendiri, roti dibikin harian oleh Fuwari Bakes, sembako diambil pagi dari pemasok. Barang HP mengikuti promo distributor, jadi angkanya bisa turun tanpa pemberitahuan.</p>
-        <p style="margin-top:10px">Kalau harga di halaman berbeda dengan saat kamu chat, harga di chat yang berlaku.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
 <section id="cara-order" class="ajakan">
   <div class="wrap">
     <div>
@@ -543,7 +507,6 @@ def halaman_beranda(ukuran):
             lh=ukuran["logo.webp"][1],
             rak=rak,
             kartu=kartu,
-            baris_papan=baris_papan,
             bayar=bayar,
             cicilan=escape(SITE["cicilan"]),
             kirim=escape(SITE["kirim"]),
