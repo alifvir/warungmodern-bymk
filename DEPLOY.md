@@ -38,13 +38,15 @@ python tools/audit.py
 3. Uji alamat produksi:
 
 ```bash
-for p in / /katalog/ /katalog/hp/ /katalog/dessert/ /404.html /assets/css/style.css /assets/img/logo.webp /robots.txt /sitemap.xml; do
-  printf "%s " "$p"; curl -s -o /dev/null -w "%{http_code}\n" "https://umkm-warung-modern.pages.dev$p"
+for p in / /katalog/ /katalog/hp/ /katalog/dessert/ /404 /assets/css/style.css /assets/img/logo.webp /robots.txt /sitemap.xml; do
+  printf "%s " "$p"; curl -s -o /dev/null -w "%{http_code}\n" "https://warungmodern-bymk.pages.dev$p"
 done
-curl -s -o /dev/null -w "%{http_code}\n" "https://umkm-warung-modern.pages.dev/halaman-ngawur"
+curl -s -o /dev/null -w "%{http_code}\n" "https://warungmodern-bymk.pages.dev/halaman-ngawur"
 ```
 
 Semua harus 200, kecuali path ngawur yang harus 404 dengan halaman sendiri.
+
+Catatan: Cloudflare Pages mengalihkan `/404.html` ke `/404` dengan 308, jadi yang diuji adalah `/404`.
 
 4. Cek di HP: tombol WhatsApp membuka aplikasi dengan pesan yang sudah terisi, menu mobile bisa dibuka dan ditutup, dan tidak ada halaman yang bisa digeser ke samping.
 

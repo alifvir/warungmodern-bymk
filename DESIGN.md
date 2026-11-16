@@ -7,14 +7,14 @@ Arahan desain untuk `warung modern by mk`. Dibaca bersama skill `antislop` sebag
 ENERGY 2 / RHYTHM 3 / MOTION 1
 
 - ENERGY 2: hangat dan ramai seperti warung yang benar-benar buka, bukan halaman kampanye. Barang dan harga yang jadi bintang, bukan slogan.
-- RHYTHM 3: komposisi antarbagian sengaja berbeda: hero belah dua dengan stiker miring, deret lima kartu rak yang rata dan sederajat, papan harga bergaris titik, blok nota untuk cara order, baris toko, footer cokelat penuh.
+- RHYTHM 3: komposisi antarbagian sengaja berbeda: hero belah dua dengan stiker miring, deret lima kartu rak yang rata dan sederajat, blok nota untuk cara order, baris toko, footer cokelat penuh. Papan harga tidak ditampilkan karena angka harian berubah dan cepat basi; harga cukup di kartu produk.
 - MOTION 1: hanya hover dan transisi 120ms. Tidak ada animasi muncul saat scroll.
 
 Design read: situs katalog untuk pembeli yang datang dari Instagram dan WhatsApp sebuah warung di Tangerang yang menjual lima rak barang berbeda, dengan bahasa visual stiker bulat milik logonya sendiri (pink, krem kertas, cokelat tinta, garis tebal).
 
 ## Kenapa arah ini
 
-Logo klien sudah punya bahasa: stiker bulat bergaris tebal, pink di atas krem, tulisan tangan, gambar tenda dan keranjang. Situs mengikuti bahasa itu, bukan palet baru, supaya logo dan halaman terlihat satu benda. Klien meminta tema "harus mirip logo" dan meminta kategori serta informasi tambahan, bukan sekadar etalase. Karena itu halaman ini punya lima rak, papan harga harian, dan blok cara order.
+Logo klien sudah punya bahasa: stiker bulat bergaris tebal, pink di atas krem, tulisan tangan, gambar tenda dan keranjang. Situs mengikuti bahasa itu, bukan palet baru, supaya logo dan halaman terlihat satu benda. Klien meminta tema "harus mirip logo" dan meminta kategori serta informasi tambahan, bukan sekadar etalase. Karena itu halaman ini punya lima rak, kartu produk dengan harga yang bisa dipindai, dan blok cara order.
 
 Yang diambil dari logo hanya tiga hal: warna, garis tebal dua piksel, dan bayangan keras tanpa blur (efek stiker ditempel di kertas). Tidak ada ilustrasi tambahan, tidak ada pola batik buatan, tidak ada emoji.
 

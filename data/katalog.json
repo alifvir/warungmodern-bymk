@@ -28,17 +28,17 @@
       "ringkas": "Telur segar, air mineral, gula, minyak. Stok harian, harga per kg atau per dus.",
       "brand": "Telur Super Segar",
       "ikon": "telur",
-      "keterangan": "Harga sembako ikut pasar, jadi tidak dipatok di halaman ini. Chat untuk harga pagi ini."
+      "keterangan": "Telur dari Telur Super Segar, air mineral dan sembako harian. Chat untuk harga pagi ini."
     },
     {
       "id": "roti",
       "nama": "Roti dan Bakery",
       "pendek": "Roti",
       "rak": "RAK 04",
-      "ringkas": "Bolu, cookies, beef floss. Dibikin harian, bisa untuk hampers.",
-      "brand": "Fuwari Bakes",
+      "ringkas": "Roti manis dan gurih, bolu, camilan Ho Ciek. Dibikin harian, bisa untuk hampers.",
+      "brand": "Fuwari Bakes dan Ho Ciek",
       "ikon": "roti",
-      "keterangan": "Roti dan bolu dari Fuwari Bakes, Gading Serpong. Pesan minimal sehari sebelum ambil untuk jumlah banyak."
+      "keterangan": "Roti dari Fuwari Bakes, Gading Serpong, dan camilan Ho Ciek. Pesan minimal sehari sebelum ambil untuk jumlah banyak."
     },
     {
       "id": "dessert",
@@ -156,26 +156,39 @@
       "kat": "sembako",
       "brand": "Telur Super Segar",
       "nama": "Telur ayam",
-      "meta": "Per kg atau per tray, stok harian",
-      "harga": null,
-      "tanya": "Tanya harga harian",
-      "gambar": null,
-      "ikon": "telur",
+      "meta": "Per kg, stok harian",
+      "harga": 26000,
+      "satuan": "per kg",
+      "gambar": "p-telur.jpg",
+      "alt": "Telur ayam cokelat satu kilogram di atas tray karton",
       "cta": "Pesan",
       "wa": "Halo, saya mau telur ayam."
     },
     {
-      "id": "cleo",
+      "id": "cleo-128",
       "kat": "sembako",
       "brand": "Sembako",
-      "nama": "Cleo air mineral",
-      "meta": "Botol 550 ml, per dus",
-      "harga": null,
-      "tanya": "Tanya harga",
-      "gambar": null,
-      "ikon": "botol",
+      "nama": "Cleo 12.8 Liter",
+      "meta": "Botol besar, air murni",
+      "harga": 22000,
+      "satuan": "per botol",
+      "gambar": "p-cleo-128.jpg",
+      "alt": "Botol Cleo 12.8 liter",
       "cta": "Pesan",
-      "wa": "Halo, saya mau Cleo per dus."
+      "wa": "Halo, saya mau Cleo 12.8 liter."
+    },
+    {
+      "id": "cleo-smart",
+      "kat": "sembako",
+      "brand": "Sembako",
+      "nama": "Cleo Smart 220 ml",
+      "meta": "24 pcs isi 220 ml per pack",
+      "harga": 22000,
+      "satuan": "per pack",
+      "gambar": "p-cleo-smart.jpg",
+      "alt": "Cleo Smart 220 ml isi 24 pcs per pack",
+      "cta": "Pesan",
+      "wa": "Halo, saya mau Cleo Smart 220 ml per pack."
     },
     {
       "id": "gula-minyak",
@@ -191,6 +204,96 @@
       "wa": "Halo, saya mau tanya harga gula dan minyak."
     },
     {
+      "id": "fuwari-beef-floss",
+      "kat": "roti",
+      "brand": "Fuwari Bakes",
+      "nama": "Roti beef floss",
+      "meta": "Beef floss, chili mayo, isian ekstra",
+      "harga": 16000,
+      "gambar": "p-roti-beef-floss.jpg",
+      "alt": "Roti beef floss dengan saus chili mayo",
+      "cta": "Pesan",
+      "wa": "Halo, saya mau roti beef floss."
+    },
+    {
+      "id": "roti-pistachio",
+      "kat": "roti",
+      "brand": "Fuwari Bakes",
+      "nama": "Roti cokelat pistachio kunafa",
+      "meta": "Sous cokelat, taburan pistachio kunafa",
+      "harga": null,
+      "tanya": "Tanya harga",
+      "gambar": "p-roti-pistachio.jpg",
+      "alt": "Roti cokelat dengan pistachio kunafa",
+      "cta": "Pesan",
+      "wa": "Halo, saya mau roti cokelat pistachio kunafa."
+    },
+    {
+      "id": "roti-crumble",
+      "kat": "roti",
+      "brand": "Fuwari Bakes",
+      "nama": "Roti cokelat crumble",
+      "meta": "Sous cokelat, crumble cokelat",
+      "harga": null,
+      "tanya": "Tanya harga",
+      "gambar": "p-roti-crumble.jpg",
+      "alt": "Roti cokelat dengan crumble",
+      "cta": "Pesan",
+      "wa": "Halo, saya mau roti cokelat crumble."
+    },
+    {
+      "id": "roti-truffle",
+      "kat": "roti",
+      "brand": "Fuwari Bakes",
+      "nama": "Roti truffle mushroom",
+      "meta": "Sous truffle jamur, garam laut",
+      "harga": null,
+      "tanya": "Tanya harga",
+      "gambar": "p-roti-truffle.jpg",
+      "alt": "Roti truffle mushroom dengan sous jamur",
+      "cta": "Pesan",
+      "wa": "Halo, saya mau roti truffle mushroom."
+    },
+    {
+      "id": "roti-choco-sous",
+      "kat": "roti",
+      "brand": "Fuwari Bakes",
+      "nama": "Roti cokelat sous",
+      "meta": "Isi cokelat sous, taburan meses",
+      "harga": null,
+      "tanya": "Tanya harga",
+      "gambar": "p-roti-choco-sous.jpg",
+      "alt": "Roti gulung isi cokelat sous dengan meses",
+      "cta": "Pesan",
+      "wa": "Halo, saya mau roti cokelat sous."
+    },
+    {
+      "id": "roti-smokebeef",
+      "kat": "roti",
+      "brand": "Fuwari Bakes",
+      "nama": "Roti smoke beef dan cheese",
+      "meta": "Smoke beef, keju, chili sous oregano",
+      "harga": null,
+      "tanya": "Tanya harga",
+      "gambar": "p-roti-smokebeef.jpg",
+      "alt": "Roti smoke beef dan cheese dengan chili sous",
+      "cta": "Pesan",
+      "wa": "Halo, saya mau roti smoke beef dan cheese."
+    },
+    {
+      "id": "roti-garlic",
+      "kat": "roti",
+      "brand": "Fuwari Bakes",
+      "nama": "Roti garlic butter cream cheese",
+      "meta": "Garlic butter, sweet cream cheese",
+      "harga": null,
+      "tanya": "Tanya harga",
+      "gambar": "p-roti-garlic.jpg",
+      "alt": "Roti garlic butter dengan sweet cream cheese",
+      "cta": "Pesan",
+      "wa": "Halo, saya mau roti garlic butter cream cheese."
+    },
+    {
       "id": "fuwari-bolu",
       "kat": "roti",
       "brand": "Fuwari Bakes",
@@ -204,17 +307,43 @@
       "wa": "Halo, saya mau bolu Fuwari."
     },
     {
-      "id": "fuwari-beef-floss",
+      "id": "hociek-teri",
       "kat": "roti",
-      "brand": "Fuwari Bakes",
-      "nama": "Roti dan beef floss",
-      "meta": "Roti Rp16.000 sampai Rp21.000, beef floss Rp16.000",
-      "harga": 16000,
-      "satuan": "mulai",
-      "gambar": null,
-      "ikon": "roti",
+      "brand": "Ho Ciek",
+      "nama": "Ho Ciek ikan teri kacang",
+      "meta": "Camilan ikan teri dan kacang, 100 g",
+      "harga": 60000,
+      "satuan": "per pack",
+      "gambar": "p-hociek-teri.jpg",
+      "alt": "Kemasan Ho Ciek ikan teri kacang 100 g",
       "cta": "Pesan",
-      "wa": "Halo, saya mau roti Fuwari."
+      "wa": "Halo, saya mau Ho Ciek ikan teri kacang."
+    },
+    {
+      "id": "hociek-keripik",
+      "kat": "roti",
+      "brand": "Ho Ciek",
+      "nama": "Ho Ciek keripik kentang manis pedas",
+      "meta": "Keripik kentang, 100 g",
+      "harga": 60000,
+      "satuan": "per pack",
+      "gambar": "p-hociek-keripik.jpg",
+      "alt": "Kemasan Ho Ciek keripik kentang manis pedas 100 g",
+      "cta": "Pesan",
+      "wa": "Halo, saya mau Ho Ciek keripik kentang manis pedas."
+    },
+    {
+      "id": "hociek-jambrong",
+      "kat": "roti",
+      "brand": "Ho Ciek",
+      "nama": "Ho Ciek ikan asin jambrong",
+      "meta": "Ikan asin jambrong, 100 g",
+      "harga": 60000,
+      "satuan": "per pack",
+      "gambar": "p-hociek-jambrong.jpg",
+      "alt": "Kemasan Ho Ciek ikan asin jambrong 100 g",
+      "cta": "Pesan",
+      "wa": "Halo, saya mau Ho Ciek ikan asin jambrong."
     },
     {
       "id": "osmanthus-qq-bowl",
@@ -267,6 +396,32 @@
       "alt": "Menu dessert dan minuman",
       "cta": "Pesan",
       "wa": "Halo, saya mau pesan minuman."
+    },
+    {
+      "id": "minuman-mangga",
+      "kat": "dessert",
+      "brand": "Dapur MK",
+      "nama": "Mangga susu",
+      "meta": "Potongan mangga dengan susu",
+      "harga": 25000,
+      "satuan": "per cup",
+      "gambar": "p-minuman-mangga.jpg",
+      "alt": "Minuman mangga susu dalam cup",
+      "cta": "Pesan",
+      "wa": "Halo, saya mau mangga susu."
+    },
+    {
+      "id": "minuman-stroberi",
+      "kat": "dessert",
+      "brand": "Dapur MK",
+      "nama": "Stroberi susu",
+      "meta": "Potongan stroberi dengan susu",
+      "harga": 25000,
+      "satuan": "per cup",
+      "gambar": "p-minuman-stroberi.jpg",
+      "alt": "Minuman stroberi susu dalam cup",
+      "cta": "Pesan",
+      "wa": "Halo, saya mau stroberi susu."
     }
   ]
 }

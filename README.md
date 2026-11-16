@@ -29,7 +29,7 @@ python build.py
 python tools/audit.py
 ```
 
-`build.py` menghapus `dist/` lalu menulis ulang 8 halaman: beranda, katalog, lima halaman rak, dan 404. Poster jpg diubah menjadi webp maksimal 760 piksel, jadi `dist/assets/img` sekitar 890 KB untuk 12 gambar.
+`build.py` menghapus `dist/` lalu menulis ulang 8 halaman: beranda, katalog, lima halaman rak, dan 404. Foto jpg diubah menjadi webp maksimal 760 piksel, jadi `dist/assets/img` sekitar 1,6 MB untuk 26 gambar.
 
 `tools/audit.py` memeriksa satu h1 per halaman, lang, title, meta description, em dash, tautan mati, aset hilang, alt dan ukuran gambar, tautan kosong, serta 18 pasangan warna teks terhadap ambang kontras WCAG AA 4.5:1. Harus berakhir `masalah: 0`.
 
@@ -47,6 +47,7 @@ Sudah pasti, berasal dari poster dan brief klien:
 - Lima rak, nama brand, dan akun Instagram atau TikTok masing-masing.
 - Harga dessert dan minuman: Osmanthus QQ Bowl Rp35.000, Tang Yuan Rp25.000, pisang nagih Rp27.000 per box, minuman Rp25.000 per cup.
 - Roti Fuwari Rp16.000 sampai Rp21.000, beef floss Rp16.000.
+- Harga dari foto yang dikirim 15 Nov 2026: telur Rp26.000 per kg, Cleo 12.8 liter Rp22.000 per botol, Cleo Smart 220 ml 24 pcs Rp22.000 per pack, camilan Ho Ciek Rp60.000 per pack 100 g.
 - Promo Samsung Galaxy A07 4/64 Rp2.099.000 dari Rp2.199.000, vivo V80, nubia A37e, iPhone 18 Pro, Solohour.
 - Klaim Hapeworld: original, garansi resmi, cicilan 0% 12 bulan, kirim seluruh Indonesia.
 
@@ -54,7 +55,8 @@ Belum dikonfirmasi, ditulis "menyusul" di halaman:
 
 - Alamat toko dan jam buka.
 - Nomor WhatsApp resmi untuk order. Halaman memakai 0812-5126-8000 karena itu nomor pengirim brief.
-- Harga sembako harian (telur, gula, minyak, Cleo) dan foto produknya.
+- Harga gula dan minyak, serta foto bolu dan cookies.
+- Harga enam roti baru (pistachio kunafa, chocolate crumble, truffle mushroom, chocolate sous, smoke beef cheese, garlic butter), jadi keenamnya tampil "Tanya harga".
 - Metode kirim dan cara hitung ongkir.
 - Nama produk makanan pada poster dessert yang harganya Rp29.000 dan Rp30.000.
 

@@ -95,6 +95,13 @@ def siapkan_gambar():
     fav.thumbnail((64, 64), Image.LANCZOS)
     fav.save(os.path.join(DIST, "assets", "favicon.png"), "PNG", optimize=True)
 
+    # Gambar pratinjau tautan. WhatsApp lebih konsisten menampilkan JPEG daripada WebP.
+    og = Image.new("RGB", (1200, 630), (255, 247, 237))
+    tanda = Image.open(os.path.join(SRC, "logo.jpg")).convert("RGB")
+    tanda.thumbnail((470, 470), Image.LANCZOS)
+    og.paste(tanda, ((1200 - tanda.width) // 2, (630 - tanda.height) // 2))
+    og.save(os.path.join(IMG, "og.jpg"), "JPEG", quality=86, optimize=True, progressive=True)
+
     for p in PRODUK:
         if not p.get("gambar"):
             continue
@@ -133,6 +140,30 @@ def kepala(judul, deskripsi, aktif, kanonikal="", skrip_katalog=False):
     skrip = (
         '<script src="/assets/js/katalog.js" defer></script>' if skrip_katalog else ""
     )
+
+    situs = "%s %s" % (SITE["brand"], SITE["brand_akhir"])
+    sosial = [
+        '<meta property="og:type" content="website">',
+        '<meta property="og:site_name" content="%s">' % escape(situs),
+        '<meta property="og:locale" content="id_ID">',
+        '<meta property="og:title" content="%s">' % escape(judul),
+        '<meta property="og:description" content="%s">' % escape(deskripsi),
+    ]
+    if url:
+        sosial.append('<meta property="og:url" content="%s%s">' % (url, kanonikal))
+        sosial.append('<meta property="og:image" content="%s/assets/img/og.jpg">' % url)
+        sosial.append('<meta property="og:image:width" content="1200">')
+        sosial.append('<meta property="og:image:height" content="630">')
+        sosial.append(
+            '<meta property="og:image:alt" content="Stiker logo %s">' % escape(situs)
+        )
+        sosial.append('<meta name="twitter:card" content="summary_large_image">')
+        sosial.append('<meta name="twitter:title" content="%s">' % escape(judul))
+        sosial.append(
+            '<meta name="twitter:description" content="%s">' % escape(deskripsi)
+        )
+        sosial.append('<meta name="twitter:image" content="%s/assets/img/og.jpg">' % url)
+
     return """<!doctype html>
 <html lang="id">
 <head>
@@ -148,6 +179,7 @@ def kepala(judul, deskripsi, aktif, kanonikal="", skrip_katalog=False):
 <link href="{font}" rel="stylesheet">
 <link rel="stylesheet" href="/assets/css/style.css">
 {kanon}
+{sosial}
 {gambar_terstruktur}
 {skrip}
 </head>
@@ -158,6 +190,7 @@ def kepala(judul, deskripsi, aktif, kanonikal="", skrip_katalog=False):
         deskripsi=escape(deskripsi),
         font=FONT,
         kanon=kanon,
+        sosial="\n".join(sosial),
         gambar_terstruktur=nomor_terstruktur,
         skrip=skrip,
     )
@@ -369,8 +402,8 @@ def halaman_beranda(ukuran):
         for k in KATEGORI
     )
 
-    pilihan = ["osmanthus-qq-bowl", "tang-yuan", "pisang-nagih", "aneka-minuman",
-               "iphone-18-pro", "samsung-a07", "implora-lip-cream", "fuwari-bolu"]
+    pilihan = ["osmanthus-qq-bowl", "roti-truffle", "pisang-nagih", "minuman-mangga",
+               "iphone-18-pro", "samsung-a07", "implora-lip-cream", "telur-ayam"]
     kartu = "\n".join(
         kartu_produk(next(p for p in PRODUK if p["id"] == pid), ukuran) for pid in pilihan
     )
@@ -726,8 +759,7 @@ def berkas_pendukung():
     tulis(
         os.path.join(DIST, "_headers"),
         "/assets/*\n  Cache-Control: public, max-age=604800\n"
-        "/*.html\n  Cache-Control: public, max-age=3600\n"
-        "/\n  Cache-Control: public, max-age=3600\n",
+        "/*\n  Cache-Control: public, max-age=3600\n",
     )
 
 
