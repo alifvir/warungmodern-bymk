@@ -51,6 +51,7 @@ Pink asli #EF6BA3 tidak pernah dipakai sebagai latar teks putih dan tidak dipaka
 ## Aturan yang dipegang
 
 - Semua angka berasal dari poster dan brief klien: harga iPhone, A07, Osmanthus, tang yuan, pisang nagih, minuman 25.000 per cup, roti 16.000 sampai 21.000. Angka yang tidak ada di materi tidak ditampilkan. Tidak ada statistik, jumlah pelanggan, atau testimoni karangan.
+- Batch foto Implora 17 Nov 2026 berisi 43 foto tanpa foto katalog resmi. Produk dikelompokkan per seri menjadi 13 kartu baru, foto WhatsApp dipotong 4:5, dan hanya harga yang terbaca di stiker kemasan yang ditulis. Kartu tanpa angka memakai "Tanya varian" atau "Tanya harga".
 - Jumlah follower hanya ditulis untuk akun yang angkanya diberikan klien (Hapeworld 114rb). Akun lain ditulis tanpa angka.
 - Barang tanpa foto memakai kotak penanda "foto menyusul", bukan gambar pinjaman dari internet.
 - Alamat, jam buka, dan nomor WhatsApp resmi belum dikonfirmasi, jadi ditulis "menyusul" apa adanya. Nomor 0812-5126-8000 dipakai karena itu nomor pengirim brief, dan dicatat di README sebagai hal yang harus dikonfirmasi.
