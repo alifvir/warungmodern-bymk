@@ -8,7 +8,9 @@
   "wa_pesan": "Halo Warung Modern by MK, saya mau pesan.",
   "kota": "Tangerang",
   "alamat": "Menyusul",
-  "jam": "Menyusul",
+  "jam": "10.00-20.00 WIB, setiap hari",
+  "jam_buka": "10:00",
+  "jam_tutup": "20:00",
   "url": "https://warungmodern-bymk.pages.dev",
   "bayar": [
     "Cash",

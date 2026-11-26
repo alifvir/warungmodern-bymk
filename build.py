@@ -126,6 +126,9 @@ def kepala(judul, deskripsi, aktif, kanonikal="", skrip_katalog=False):
             '{"@context":"https://schema.org","@type":"Store",'
             '"name":"%s %s","url":"%s","telephone":"+%s",'
             '"address":{"@type":"PostalAddress","addressLocality":"%s","addressCountry":"ID"},'
+            '"openingHoursSpecification":{"@type":"OpeningHoursSpecification",'
+            '"dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],'
+            '"opens":"%s","closes":"%s"},'
             '"description":"%s"}'
             "</script>"
             % (
@@ -134,6 +137,8 @@ def kepala(judul, deskripsi, aktif, kanonikal="", skrip_katalog=False):
                 url,
                 SITE["wa"],
                 SITE["kota"],
+                SITE["jam_buka"],
+                SITE["jam_tutup"],
                 escape(SITE["deskripsi"]),
             )
         )
@@ -296,7 +301,7 @@ def footer():
       {toko}
       </div>
     </div>
-    <p class="footer-catatan">Alamat dan jam buka {status}. Harga yang tidak tercantum di halaman ini dikonfirmasi lewat WhatsApp.</p>
+    <p class="footer-catatan">Alamat {status}. Jam buka {jam}. Harga yang tidak tercantum di halaman ini dikonfirmasi lewat WhatsApp.</p>
   </div>
 </footer>
 <div class="pita-wa">
@@ -316,6 +321,7 @@ def footer():
         kategori=kategori,
         toko=toko,
         status=escape(SITE["alamat"].lower()),
+        jam=escape(SITE["jam"]),
     )
 
 
@@ -440,7 +446,7 @@ def halaman_beranda(ukuran):
 <section class="hero">
   <div class="wrap">
     <div>
-      <p class="kicker">Tangerang, buka tiap hari</p>
+      <p class="kicker">Tangerang, buka setiap hari 10.00-20.00 WIB</p>
       <h1>Lima rak warung, <mark>satu nomor WhatsApp.</mark></h1>
       <p class="lead">Sembako, HP bergaransi, kosmetik, roti, dessert dan minuman. Pilih barangnya di sini, lalu selesaikan pesanan lewat chat. Bisa COD, transfer, debit, sampai cicilan.</p>
       <div class="hero-aksi">
@@ -544,7 +550,7 @@ def halaman_beranda(ukuran):
             cicilan=escape(SITE["cicilan"]),
             kirim=escape(SITE["kirim"]),
             alamat=escape(SITE["alamat"].lower()),
-            jam=escape(SITE["jam"].lower()),
+            jam=escape(SITE["jam"]),
             toko=toko,
         )
         + footer()
@@ -605,7 +611,7 @@ def halaman_katalog(ukuran):
 
     <div class="bantuan">
       <span><b>Tanpa akun:</b> semua pesanan lewat WhatsApp</span>
-      <span>Stok berubah tiap hari</span>
+      <span>Stok berubah setiap hari</span>
     </div>
   </div>
 </section>
